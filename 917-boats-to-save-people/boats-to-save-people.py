@@ -5,12 +5,9 @@ class Solution:
         boats = 0
         people.sort()
         while l <= r:
-            weight = people[l] + people[r]
-            if weight > limit:
-                r -= 1
-            else:
-                r -= 1
+            if people[l] + people[r] <= limit:
                 l += 1
+            r -= 1
             boats += 1
         return boats
 
