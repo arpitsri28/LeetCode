@@ -5,25 +5,23 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def helper(self, root, arr):
+    def __init__(self):
+        self.prev = None
+    def helper(self, root):
         if not root:
-            return arr
+            return True
         
-        self.helper(root.left, arr)
-        arr.append(root.val)
-        self.helper(root.right, arr)
-        return arr
+        if not self.helper(root.left):
+            return False
+        
+        if self.prev is not None and root.val <= self.prev:
+            return False
+        self.prev = root.val
+        
+        return self.helper(root.right)
 
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        output = self.helper(root, [])
-        prev = output[0]
-        i = 0
-        while i < len(output) - 1:
-            if output[i] >= output[i+1]:
-                return False
-            i += 1
-        
-        return True
+        return self.helper(root)
 
 
 
