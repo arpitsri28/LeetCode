@@ -12,7 +12,6 @@ class Solution:
                     return False
                 stack.pop()
 
-        
         if len(stack) != 0:
             return False
 
