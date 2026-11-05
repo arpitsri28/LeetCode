@@ -39,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0006-zigzag-conversion](https://github.com/arpitsri28/LeetCode/tree/master/0006-zigzag-conversion) |
 | [0020-valid-parentheses](https://github.com/arpitsri28/LeetCode/tree/master/0020-valid-parentheses) |
 | [0071-simplify-path](https://github.com/arpitsri28/LeetCode/tree/master/0071-simplify-path) |
 | [0763-partition-labels](https://github.com/arpitsri28/LeetCode/tree/master/0763-partition-labels) |
