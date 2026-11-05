@@ -19,16 +19,4 @@ class Solution:
             else:
                 k -= 1
         
-        output = ''
-        for i in arr:
-            output += i
-        
-        return output
-        
-
-            
-
-
-            
-
-        
+        return ''.join(arr)
